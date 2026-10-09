@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #e6eff5;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* =====================
+   TOP
+===================== */
+
+.top {
+    padding: 42px 40px;
+}
+
+.top h1 {
+    color: #27aaa9;
+    font-size: 22px;
+    margin-bottom: 26px;
+}
+
+.top h2 {
+    color: #b7df18;
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+
+.top p {
+    color: #91a4c0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =====================
+   BOTTOM
+===================== */
+
+.bottom {
+    display: flex;
+}
+
+.subscription,
+.why-us {
+    width: 50%;
+    padding: 41px 40px;
+}
+
+.subscription {
+    background-color: #2bb3b1;
+}
+
+.why-us {
+    background-color: #4dbdbc;
+}
+
+.bottom h3 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* =====================
+   PRICE
+===================== */
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.price strong {
+    color: white;
+    font-size: 30px;
+}
+
+.price span {
+    color: #8dd5d4;
+    font-size: 14px;
+}
+
+.subscription > p {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* =====================
+   BUTTON
+===================== */
+
+button {
+    width: 100%;
+    height: 48px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bfe323;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* =====================
+   WHY US
+===================== */
+
+.why-us p {
+    color: #e3f7f6;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+
+/* ==================================
+   PLANSHEET
+   601px - 900px
+================================== */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .top {
+        padding: 38px 32px;
+    }
+
+    .subscription,
+    .why-us {
+        padding: 38px 30px;
+    }
+}
+
+
+/* ==================================
+   TELEFON
+   600px va undan kichik
+================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: white;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .top {
+        padding: 30px 24px;
+    }
+
+    .top h1 {
+        font-size: 21px;
+        margin-bottom: 22px;
+    }
+
+    .top h2 {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    .top p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .top p br {
+        display: none;
+    }
+
+    /* Pastki bloklar pastma-past */
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .subscription,
+    .why-us {
+        width: 100%;
+        padding: 32px 24px;
+    }
+
+    .subscription {
+        min-height: 250px;
+    }
+
+    .why-us {
+        min-height: 240px;
+    }
+
+    .bottom h3 {
+        font-size: 17px;
+        margin-bottom: 18px;
+    }
+
+    .price strong {
+        font-size: 29px;
+    }
+
+    button {
+        margin-top: 25px;
+    }
+
+    .why-us p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+
+/* ==================================
+   JUDA KICHIK TELEFON
+   380px va undan kichik
+================================== */
+
+@media (max-width: 380px) {
+
+    .top {
+        padding: 25px 20px;
+    }
+
+    .subscription,
+    .why-us {
+        padding: 28px 20px;
+    }
+
+    .top h1 {
+        font-size: 20px;
+    }
+
+    .top h2 {
+        font-size: 15px;
+    }
+
+    .top p {
+        font-size: 13px;
+    }
+
+    .price strong {
+        font-size: 27px;
+    }
+}
